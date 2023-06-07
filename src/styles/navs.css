@@ -1,0 +1,21 @@
+/* for all screens, mobile first */
+#nav {
+    align-items: center;
+    display: flex;
+    height: var(--nav-height);
+    justify-content: space-between;
+    padding-inline: 1.25rem;
+    position: absolute;
+    width: 100dvw;
+    z-index: 1;
+}
+#nav > #brand > img {
+    height: auto;
+    width: 6.25rem;
+}
+
+/* for tablet and PC screens */
+@media screen and (min-width: 1081px) {
+    #nav { padding-inline: 2.5rem; }
+    #nav > #brand > img { width: 12.5rem; }
+}

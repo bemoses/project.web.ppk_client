@@ -1,0 +1,7 @@
+:root {
+    /* fonts */
+    --font-family-barcode: 'Libre Barcode 128 Text', cursive;
+    
+    /* navbar variables */
+    --nav-height: 5rem;
+}

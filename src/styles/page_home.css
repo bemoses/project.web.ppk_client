@@ -1,0 +1,30 @@
+/* for all screens, mobile first */
+#home[ data-type = "page" ] {
+    background-image: url("../images/transaction_animation_transparent.gif");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#home[ data-type = "page" ] > #intro {
+    background-color: rgba(0, 0, 0, 0.05);
+    border: 0.0625rem solid rgba(0, 0, 0, 0.01);
+    border-radius: 15rem 50%;
+    font-family: var(--font-family-barcode);
+    font-size: 3.875rem;
+    padding: 5rem;
+    transform: translateY(-5rem);
+}
+
+/* for tablet and PC screens */
+@media screen and (min-width: 1081px) {
+    #home[ data-type = "page" ] > #intro {
+        border-radius: 75rem;
+        font-size: 7.5rem;
+        transform: translateY(-5rem);
+        width: 45%;
+    }
+}

@@ -1,0 +1,24 @@
+* { box-sizing: border-box; }
+
+#page { position: fixed; }
+
+/* layout component styles */
+#page {
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    height: 100%;
+    top: 0;
+    width: 100%;
+}
+#page > #page-content {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+/* for all pages/ divs (contained in the #page-content) */
+[ data-type = "page" ] {
+    min-height: 100%;
+    padding: 1.25rem 2.5rem;
+    width: 100%;
+}
